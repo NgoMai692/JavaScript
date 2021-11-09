@@ -7,48 +7,49 @@
 <body>
 Bài 1
 <script>
-    var ly ;
-    var hoa;
-    var sinh;
-    var đtb;
+    let ly ;
+    let hoa;
+    let sinh;
+    let đtb;
 
-    ly = prompt("Nhập điểm môn vật lý:");
-    hoa = prompt("Nhập điểm môn hóa học");
-    sinh = prompt("Nhập điểm môn sinh học");
-    dtb = (ly/3+hoa/3+sinh/3)
-    alert('Điểm trung bình 3 môn là:'+dtb);
-
-</script>
-Bài 2
-<script>
-    var c;
-    var F;
-
-    c = prompt("Nhập nhiệt độ 0C:");
-    F = (c*9)/5+32;
-    alert('độ F là :'+ F);
+    ly = parseFloat(prompt("Nhập điểm môn vật lý:"));
+    hoa = parseFloat(prompt("Nhập điểm môn hóa học"));
+    sinh = parseFloat(prompt("Nhập điểm môn sinh học"));
+    sum= ly+hoa+sinh
+    dtb = (ly+hoa+sinh)/3
+    document.write('Tổng điểm 3 monn la; '+ sum +' Điểm trung bình 3 môn là:'+dtb);
 
 </script>
+<!--Bài 2-->
+<!--<script>-->
+<!--    let c;-->
+<!--    let F;-->
 
-Bài 3
-<script>
-    var r;
-    var s;
+<!--    c = prompt("Nhập nhiệt độ 0C:");-->
+<!--    F = (c*9)/5+32;-->
+<!--    alert('độ F là :'+ F);-->
 
-    r=prompt('Nhập bán kính hình tròn:')
-    s=r*r*3.14
-    alert('Diện tích hình tròn có bán kính '+r+' là :' + s);
+<!--</script>-->
 
-</script>
-Bài 4
-<script>
-    var R ;
-    var C ;
+<!--Bài 3-->
+<!--<script>-->
+<!--    let r;-->
+<!--    let s;-->
 
-    R= prompt('Nhập bán kính hình tròn:')
-    C=R*2*3.14
-    alert('Chu vi của hình tròn có bán kính '+R+' là :'+C);
-</script>
+<!--    r=prompt('Nhập bán kính hình tròn:')-->
+<!--    s=r*r*3.14-->
+<!--    alert('Diện tích hình tròn có bán kính '+r+' là :' + s);-->
+
+<!--</script>-->
+<!--Bài 4-->
+<!--<script>-->
+<!--    let R ;-->
+<!--    let C ;-->
+
+<!--    R= prompt('Nhập bán kính hình tròn:')-->
+<!--    C=R*2*3.14-->
+<!--    alert('Chu vi của hình tròn có bán kính '+R+' là :'+C);-->
+<!--</script>-->
 
 </body>
 </html>
